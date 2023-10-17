@@ -1,0 +1,54 @@
+.nav_container{
+    margin:0;
+    width: 100vw;
+    display:flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    justify-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 10px;
+    background-color: #0E1965;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right:50px;
+    flex-shrink: 0;
+    @media (max-width:470px){
+        padding-left:24px;
+        padding-right:10px;
+    }
+    .logo_nav_container
+    {
+        display: flex;
+        flex-direction: row;
+        .logo_text{
+            width: 122px ;
+            height:44px;
+            @media (max-width:500px){
+                display: none;
+            }
+        }
+    }
+    .wallet_btn{
+        width: 186px;
+        height: 49px;
+        flex-shrink: 0;
+        background-color: #FD4C4C;
+        border-radius: 60px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text{
+            color: #FFF;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            justify-self: center;
+        }
+}
+}

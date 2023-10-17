@@ -1,0 +1,360 @@
+.lottery_container {
+    background: #010A4C;
+    flex: 1 1 auto;
+    width: 0%;
+    padding-bottom: 44px;
+    .mcontainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 58px;
+
+        .desc_container {
+            align-self: center;
+            display: inline-flex;
+            flex-direction: column;
+            max-width: 706px;
+            width: 100%;
+            align-items: center;
+            padding-top: 49px;
+
+            .desc_head {
+                display: flex;
+                flex-direction: row;
+                column-gap: 5px;
+                justify-content: center;
+                align-items: center;
+                .desc_text_head{
+                    font-size: 30px;
+                    font-weight: 600;
+                    @media (max-width : 430px){
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .desc_content {
+                //max-width: 706px;
+                width: 100%;
+            }
+
+            .btn_box {
+                padding-top: 18px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                column-gap: 14px;
+                width: 100%;
+                .btn {
+                    cursor: pointer;
+                    width: 186px;
+                    height: 49px;
+                    background-color: #FD4C4C;
+                    border-radius: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+            }
+        }
+        .statistics_container{
+            .sta_val {
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .sta_desc {
+                font-size: 17px;
+                font-weight: 400;
+                @media (max-width:435px){
+                    font-size:14px;
+                    font-weight: 500;
+                }
+            }
+            .red_border {
+                width: 4px;
+                background: #FD4C4C;
+            }
+            .statistics {
+                display: flex;
+                flex-direction: row;
+                padding-left: 84px;
+                padding-right: 104px;
+                width: 100%;
+                justify-content: space-between;
+                @media (max-width:1050px){
+                    display: none;
+                }
+                .sta_detail {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+            .statistics_responsive{
+                display: none;
+                flex-direction: column;
+                padding-left: 84px;
+                padding-right: 104px;
+                @media (max-width:1050px){
+                    display: flex;
+                }
+                @media (max-width:530px){
+                    padding-left: 44px;
+                    padding-right: 44px;
+                }
+                .statistics_responsive_item{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        
+
+        .lottery_btn_group {
+            display: flex;
+            flex-direction: row;
+            padding-left: 57px;
+            padding-right: 78px;
+            width: 100%;
+            column-gap: 24px;
+            @media (max-width:1050px){
+                flex-direction: column;
+                row-gap: 14px;
+            }
+            .lottery_btn {
+                //padding: 12px 4px 12px 4px;
+                width: 50%;
+                height:40px;
+                background-color: #0E1965;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media (max-width:1050px){
+                    width:100%;
+                }
+                border-radius: 60px;
+                -webkit-border-radius: 60px;
+                -moz-border-radius: 60px;
+                -ms-border-radius: 60px;
+                -o-border-radius: 60px;
+
+                .lottery_btn_text {
+                    margin:auto;
+                    font-size: 17px;
+                    font-weight: 400;
+                    @media (max-width:830px){
+                        font-size: 17px;
+                        font-weight: 400;
+                    }
+                    @media (max-width:435px){
+                        font-size:13px;
+                        font-weight: 500;
+                    }
+                }
+                @media (max-width:830px){
+                    width:100%;
+                    height:40px;
+                }
+            }
+        }
+
+        .deposit_ticket_container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            column-gap: 139px;
+            overflow: hidden;
+            padding-bottom: 159px;
+            @media (max-width:1000px){
+                overflow-x: scroll;
+            }
+            @media (max-width:735px){
+                flex-direction: column;
+                row-gap: 130px;
+                align-items: center;
+            }
+            .container_item {
+                .top_layer {
+                    position: relative;
+                    z-index: 100;
+                    width: 270px;
+                    height: 276px;
+                    background: #0E1965;
+                    border-radius: 14px;
+                    .ciento_logo{
+                        position: absolute;
+                        top:18px;
+                        left:16px;
+                    }
+                    .ciento_deposit_logo{
+                        position: absolute;
+                        top:7px;
+                        left:26px;
+                    }
+                    .ciento_ticket_logo{
+                        position: absolute;
+                        top:7px;
+                        left:53px;
+                    }
+
+
+                    .bottom_layer {
+                        position: absolute;
+                        z-index: 200;
+                        width: 318px;
+                        height: 208px;
+                        background: #0E1965;
+                        box-shadow: -3px -5px 12px 0px rgba(0, 0, 0, 0.25);
+                        top:170px;
+                        left:-24px;
+                        .deposit_ticket_desc_container{
+                            padding: 24px 12px 20px 28px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            .head_title{
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+                            .content_container{
+                                font-size:14px;
+                                font-weight: 400;
+                                text-align: left;
+                            }
+                            .deposit_btn_group{
+                                width:100%;
+                                display: flex;
+                                flex-direction: row;
+                                column-gap:12px;
+                                padding-top:16px;
+                                .ciento_deposit_withdraw{
+                                    width:50%;
+                                    height:40px;
+                                    border:1px solid ;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border-radius: 26px;
+                                    -webkit-border-radius: 26px;
+                                    -moz-border-radius: 26px;
+                                    -ms-border-radius: 26px;
+                                    -o-border-radius: 26px;
+                                }
+                                .deposit_btn
+                                {
+                                    background: #FD4C4C;
+                                    border-color: transparent;
+                                }
+                                .withdraw_btn{
+                                    border-color: #FD4C4C;
+                                    background-color: transparent;
+                                  
+                                }
+                                .ciento_deposit_withdraw_btn_text{
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                }
+                                .ciento_ticket_button{
+                                    height:40px;
+                                    width:156px;
+                                    .ciento_ticket_button_text{
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .stake_ciento_tokens{
+            padding: 24px 28px 24px 28px;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            max-width:507px;
+            width: 90%;
+            border-radius: 11px;
+            background: #0E1965;
+            box-shadow: -3px -5px 12px 0px rgba(0, 0, 0, 0.25);
+            .stake_header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .stake_title{
+                font-size: 20px;
+                font-weight: 600;
+                @media (max-width:400px){
+                    font-size:15px;
+                    font-weight: 600;
+                }
+            }
+            .stake_available{
+                font-size: 14px;
+                font-weight: 400;
+                float:right;
+            }
+            .stake_control {
+                width: 100%;
+                height: 52px;
+                border-radius: 6px;
+                background-color: #010A4C;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 16.7px 12px 16.7px;
+                cursor: pointer;
+
+                .stake_control_drop {
+                    display: flex;
+                    flex-direction: row;
+                    cursor: pointer;
+                    //justify-content: center;
+                    align-items: center;
+                    column-gap: 3px;
+
+                    .tokenName {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+                .stake_val{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            .approve_btn{
+                margin-top:12px;
+                width: 156px;
+                height: 40px;
+                align-self: center;
+                background-color: #FD4C4C;
+                border-radius: 20px;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                -ms-border-radius: 20px;
+                -o-border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                user-select: none;
+                .approve_text
+                {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
